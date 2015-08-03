@@ -6,7 +6,7 @@ var webpack = require('webpack');
 
 module.exports = {
     entry:{
-        'page1':'./entry.js'
+        'main':'./main'
     },
     output:{
         path:__dirname,
@@ -26,16 +26,16 @@ module.exports = {
         }
     },
     plugins:[
-        new webpack.ProvidePlugin({
+        /*new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery",
             "window.jQuery": "jquery",
             "root.jQuery": "jquery"
-        }),
-        new webpack.optimize.CommonsChunkPlugin({
-            name:'common',
-            filename:'[name].js'
-        })
-    ]
+        }),*/
+        new webpack.optimize.CommonsChunkPlugin('vendor','vendor.js',Infinity)
+    ],
+    externals:{
+        'jquery':'$'
+    }
 
 };
