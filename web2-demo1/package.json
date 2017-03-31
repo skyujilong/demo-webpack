@@ -1,0 +1,32 @@
+{
+    "name": "web2-demo1",
+    "version": "1.0.0",
+    "description": "demo for webpack 2",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack --config webpack.config.js --env.platform=web --color"
+    },
+    "dependencies": {
+        "webpack": "^2.3.2",
+        "moment": "*"
+    },
+    "devDependencies": {
+        "clean-webpack-plugin": "*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/skyujilong/demo-webpack.git"
+    },
+    "keywords": [
+        "demo",
+        "for",
+        "webpack2",
+        "webpack2"
+    ],
+    "author": "jilong5",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/skyujilong/demo-webpack/issues"
+    },
+    "homepage": "https://github.com/skyujilong/demo-webpack#readme"
+}
